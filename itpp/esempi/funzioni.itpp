@@ -1,0 +1,4 @@
+definisci funzione quadrato con parametro x
+    restituisci x per x
+fine
+stampa quadrato(5)

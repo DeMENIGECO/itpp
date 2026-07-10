@@ -1,0 +1,6 @@
+sia età uguale a 30
+se età è maggiore di 18 allora
+    stampa "Adulto"
+altrimenti
+    stampa "Minore"
+fine
