@@ -1,0 +1,12 @@
+definisci funzione fibonacci con parametro n
+    se n è minore di 2 allora
+        restituisci n
+    fine
+    restituisci fibonacci(n meno 1) più fibonacci(n meno 2)
+fine
+
+sia lista uguale a []
+ripeti 10 volte
+    aggiungi fibonacci(i) a lista
+fine
+stampa lista
