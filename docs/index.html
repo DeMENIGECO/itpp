@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I++ | Italian Plus Plus</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #082f49;
+        }
+
+        .secondary {
+            border: 2px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .code {
+            background: #020617;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: auto;
+            font-family: monospace;
+            color: #a7f3d0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">I++</div>
+
+    <nav>
+        <a href="/doc/../">Home</a>
+        <a href="doc/">Documentazione</a>
+        <a href="https://github.com/DeMENIGECO/itpp">GitHub</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <h1>I++</h1>
+
+    <h2>Programmare in italiano.</h2>
+
+    <p>
+        I++ (Italian Plus Plus) è un linguaggio di programmazione
+        interpretato dove puoi scrivere codice usando parole italiane.
+        Semplice da imparare, potente da estendere.
+    </p>
+
+    <div class="buttons">
+        <a class="button primary" href="https://github.com/DeMENIGECO/itpp/releases/download/1.0/italian-plus-plus.zip">
+            Scarica I++
+        </a>
+
+        <a class="button secondary" href="/doc/">
+            Documentazione
+        </a>
+    </div>
+
+</section>
+
+
+<section id="funzioni">
+
+<h2 class="title">
+    Caratteristiche
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🇮🇹 Sintassi italiana</h3>
+<p>
+Scrivi programmi usando parole naturali:
+"stampa", "se", "ripeti", "definisci".
+</p>
+</div>
+
+
+<div class="card">
+<h3>⚡ Interprete Python</h3>
+<p>
+Un interprete leggero scritto in Python,
+facile da modificare e migliorare.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🔄 REPL interattiva</h3>
+<p>
+Prova subito il linguaggio senza creare file.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🛠 Estendibile</h3>
+<p>
+Aggiungi nuove funzioni, comandi e librerie.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="esempio">
+
+<h2 class="title">
+Esempio di codice
+</h2>
+
+<div class="code">
+
+sia nome uguale a "Marco"<br><br>
+
+stampa "Ciao " + nome<br><br>
+
+se età è maggiore di 18 allora<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stampa "Adulto"<br>
+altrimenti<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stampa "Minore"<br>
+fine
+
+</div>
+
+</section>
+
+
+<section id="installazione">
+
+<h2 class="title">
+Installazione
+</h2>
+
+<div class="code">
+
+python -m itpp.main --repl
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 I++ - Italian Plus Plus<br>
+Un linguaggio creato per programmare in italiano.
+
+</footer>
+
+
+</body>
+</html>

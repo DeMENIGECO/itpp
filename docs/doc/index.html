@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentazione | Italian Plus Plus</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #082f49;
+        }
+
+        .secondary {
+            border: 2px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .code {
+            background: #020617;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: auto;
+            font-family: monospace;
+            color: #a7f3d0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">I++</div>
+
+    <nav>
+        <a href="../">Home</a>
+        <a href="../doc/">Documentazione</a>
+        <a href="https://github.com/DeMENIGECO/itpp">GitHub</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <h1>Documentazione</h1>
+
+    <h2>Introduzione</h2>
+
+    <p>
+        I++ è un linguaggio di programmazione interpretato, progettato per essere leggibile come un testo italiano. È pensato per essere semplice, estendibile e multipiattaforma.
+    </p>
+
+    <h2>Installazione</h2>
+
+    <p>
+        Per installare I++, scarica il pacchetto dal link sottostante e decomprimilo in una cartella a tua scelta. Assicurati di avere Python installato sul tuo sistema.
+    </p>
+
+    <div class="buttons">
+        <a class="button primary" href="https://github.com/DeMENIGECO/itpp/releases/download/1.0/italian-plus-plus.zip">
+            Scarica I++
+        </a>
+    </div>
+
+    <h2>Avvio dell'interprete</h2>
+    <p>
+        Per avviare l'interprete, apri il terminale, naviga nella cartella dove hai decompresso I++ e digita il seguente comando: <br/>
+    </p>
+
+    <div class="code" style="text-align: left;">
+        python main.py
+    </div>
+
+    <p>
+        Dovrebbe avviarsi l'interprete e potrai iniziare a scrivere codice in italiano. Inizia scrivendo Ciao Mondo:
+    </p>
+
+    <div class="code" style="text-align: left;">
+        I++ 1.0<br>
+        >> stampa "Ciao Mondo"
+    </div>
+
+    <p>
+        Ora crea <code class="code" style="padding: 5px;">il_mio_primo_programma.itpp</code> con il seguente contenuto:
+    </p>
+    <div class="code" style="text-align: left;">
+        stampa "Ciao mondo"
+    </div>
+    <p>Avvialo con <code class="code" style="padding: 5px;">python main.py il_mio_primo_programma.itpp</code>.Dovrebbe stampare "Ciao mondo" sul terminale.</p>
+
+    <h2>Sintassi base</h2>
+
+    <h3>Stampa</h3>
+    <div class="code" style="text-align: left;">
+        stampa "Ciao mondo"
+    </div>
+    
+    <h3>Variabili</h3>
+    <div class="code" style="text-align: left;">
+        sia nome uguale a "Marco"
+    </div>
+
+    <h3>Condizioni</h3>
+    <div class="code" style="text-align: left;">
+        se età è maggiore di 18 allora<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stampa "Adulto"<br>
+altrimenti<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stampa "Minore"<br>
+fine
+    </div>
+
+    <h3>Cicli</h3>
+    <div class="code" style="text-align: left;">
+        ripeti 5 volte<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stampa "Ciao mondo"<br>
+fine
+    </div>
+
+    <h3>Funzioni</h3>
+    <div class="code" style="text-align: left;">
+        definisci funzione saluta con parametro nome<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stampa "Ciao " + nome<br>
+fine
+    </div>
+
+    <h2>Altri esempi</h2>
+    <h3>Domande</h3>
+    <div class="code" style="text-align: left;">
+        chiedi "Come ti chiami? " e salva in nome
+stampa "Ciao!"
+</div>
+
+    <h3>Fibonacci</h3>
+    <div class="code" style="text-align: left;">
+        definisci funzione fibonacci con parametro n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;se n è minore di 2 allora<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;restituisci n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fine<br>
+&nbsp;&nbsp;&nbsp;&nbsp;restituisci fibonacci(n meno 1) più fibonacci(n meno 2)<br>
+fine<br>
+<br>
+sia lista uguale a []<br>
+ripeti 10 volte<br>
+&nbsp;&nbsp;&nbsp;&nbsp;aggiungi fibonacci(i) a lista<br>
+fine<br>
+stampa lista<br>
+</div>
+</section>
+
+<footer>
+
+© 2026 I++ - Italian Plus Plus<br>
+Un linguaggio creato per programmare in italiano.
+
+</footer>
+
+
+</body>
+</html>
